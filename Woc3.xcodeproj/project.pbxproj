@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A2DD54E183D02EE00D82922 /* RegisterScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2DD54D183D02EE00D82922 /* RegisterScene.m */; };
 		1A304D92183E4D6C00F611F5 /* GameProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A304D91183E4D6C00F611F5 /* GameProxy.m */; };
-		1A6568F8183CA23D00E16029 /* LoginScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6568F7183CA23D00E16029 /* LoginScene.m */; };
-		1ACD2328183D05B000302D4B /* OptionScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ACD2327183D05B000302D4B /* OptionScene.m */; };
+		1A304D9B183E4ECE00F611F5 /* LoginScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A304D94183E4ECE00F611F5 /* LoginScene.m */; };
+		1A304D9C183E4ECE00F611F5 /* MainScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A304D96183E4ECE00F611F5 /* MainScene.m */; };
+		1A304D9D183E4ECE00F611F5 /* OptionScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A304D98183E4ECE00F611F5 /* OptionScene.m */; };
+		1A304D9E183E4ECE00F611F5 /* RegisterScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A304D9A183E4ECE00F611F5 /* RegisterScene.m */; };
 		1AD6C07A183DE17500C339E5 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD6C067183DE17500C339E5 /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1AD6C07B183DE17500C339E5 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD6C06A183DE17500C339E5 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1AD6C07C183DE17500C339E5 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD6C06C183DE17500C339E5 /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -39,7 +40,6 @@
 		B737897E180762440076A88C /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7378974180762440076A88C /* Icon@2x.png */; };
 		B73789871807631A0076A88C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B73789851807631A0076A88C /* main.m */; };
 		B737898A1807642B0076A88C /* libcocos2d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B737894B180761A90076A88C /* libcocos2d.a */; };
-		B7378994180767190076A88C /* MainScene.m in Sources */ = {isa = PBXBuildFile; fileRef = B7378993180767190076A88C /* MainScene.m */; };
 		B77F1B3217B978D7009739AE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3117B978D7009739AE /* QuartzCore.framework */; };
 		B77F1B3417B978D7009739AE /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3317B978D7009739AE /* OpenGLES.framework */; };
 		B77F1B3617B978D7009739AE /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3517B978D7009739AE /* OpenAL.framework */; };
@@ -90,14 +90,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1A2DD54C183D02EE00D82922 /* RegisterScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterScene.h; path = ../RegisterScene.h; sourceTree = "<group>"; };
-		1A2DD54D183D02EE00D82922 /* RegisterScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisterScene.m; path = ../RegisterScene.m; sourceTree = "<group>"; };
 		1A304D90183E4D6C00F611F5 /* GameProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameProxy.h; sourceTree = "<group>"; };
 		1A304D91183E4D6C00F611F5 /* GameProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameProxy.m; sourceTree = "<group>"; };
-		1A6568F6183CA23D00E16029 /* LoginScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginScene.h; path = ../LoginScene.h; sourceTree = "<group>"; };
-		1A6568F7183CA23D00E16029 /* LoginScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginScene.m; path = ../LoginScene.m; sourceTree = "<group>"; };
-		1ACD2326183D05B000302D4B /* OptionScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OptionScene.h; path = ../OptionScene.h; sourceTree = "<group>"; };
-		1ACD2327183D05B000302D4B /* OptionScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OptionScene.m; path = ../OptionScene.m; sourceTree = "<group>"; };
+		1A304D93183E4ECE00F611F5 /* LoginScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginScene.h; sourceTree = "<group>"; };
+		1A304D94183E4ECE00F611F5 /* LoginScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginScene.m; sourceTree = "<group>"; };
+		1A304D95183E4ECE00F611F5 /* MainScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainScene.h; sourceTree = "<group>"; };
+		1A304D96183E4ECE00F611F5 /* MainScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainScene.m; sourceTree = "<group>"; };
+		1A304D97183E4ECE00F611F5 /* OptionScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionScene.h; sourceTree = "<group>"; };
+		1A304D98183E4ECE00F611F5 /* OptionScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionScene.m; sourceTree = "<group>"; };
+		1A304D99183E4ECE00F611F5 /* RegisterScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterScene.h; sourceTree = "<group>"; };
+		1A304D9A183E4ECE00F611F5 /* RegisterScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterScene.m; sourceTree = "<group>"; };
 		1AD6C066183DE17500C339E5 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
 		1AD6C067183DE17500C339E5 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
 		1AD6C068183DE17500C339E5 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
@@ -142,8 +144,6 @@
 		B7378974180762440076A88C /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Source/Resources/Icon@2x.png"; sourceTree = SOURCE_ROOT; };
 		B73789851807631A0076A88C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Source/main.m; sourceTree = SOURCE_ROOT; };
 		B73789861807631A0076A88C /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = Source/Prefix.pch; sourceTree = SOURCE_ROOT; };
-		B7378992180767190076A88C /* MainScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainScene.h; path = ../MainScene.h; sourceTree = "<group>"; };
-		B7378993180767190076A88C /* MainScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainScene.m; path = ../MainScene.m; sourceTree = "<group>"; };
 		B77F1B2E17B978D7009739AE /* Woc3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Woc3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77F1B3117B978D7009739AE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B77F1B3317B978D7009739AE /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -244,14 +244,14 @@
 		1AD6C08E183DE66800C339E5 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				B7378992180767190076A88C /* MainScene.h */,
-				B7378993180767190076A88C /* MainScene.m */,
-				1A6568F6183CA23D00E16029 /* LoginScene.h */,
-				1A6568F7183CA23D00E16029 /* LoginScene.m */,
-				1A2DD54C183D02EE00D82922 /* RegisterScene.h */,
-				1A2DD54D183D02EE00D82922 /* RegisterScene.m */,
-				1ACD2326183D05B000302D4B /* OptionScene.h */,
-				1ACD2327183D05B000302D4B /* OptionScene.m */,
+				1A304D93183E4ECE00F611F5 /* LoginScene.h */,
+				1A304D94183E4ECE00F611F5 /* LoginScene.m */,
+				1A304D95183E4ECE00F611F5 /* MainScene.h */,
+				1A304D96183E4ECE00F611F5 /* MainScene.m */,
+				1A304D97183E4ECE00F611F5 /* OptionScene.h */,
+				1A304D98183E4ECE00F611F5 /* OptionScene.m */,
+				1A304D99183E4ECE00F611F5 /* RegisterScene.h */,
+				1A304D9A183E4ECE00F611F5 /* RegisterScene.m */,
 			);
 			name = Scene;
 			path = Source/Scene;
@@ -498,20 +498,20 @@
 			files = (
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
 				1AD6C080183DE17500C339E5 /* ASIInputStream.m in Sources */,
-				1A2DD54E183D02EE00D82922 /* RegisterScene.m in Sources */,
 				1AD6C07D183DE17500C339E5 /* ASIDownloadCache.m in Sources */,
 				1AD6C084183DE18F00C339E5 /* Reachability.m in Sources */,
 				1AD6C07B183DE17500C339E5 /* ASIDataCompressor.m in Sources */,
-				B7378994180767190076A88C /* MainScene.m in Sources */,
 				1AD6C094183DE98800C339E5 /* Parms.m in Sources */,
 				1AD6C07F183DE17500C339E5 /* ASIHTTPRequest.m in Sources */,
-				1A6568F8183CA23D00E16029 /* LoginScene.m in Sources */,
 				1AD6C07C183DE17500C339E5 /* ASIDataDecompressor.m in Sources */,
+				1A304D9D183E4ECE00F611F5 /* OptionScene.m in Sources */,
+				1A304D9E183E4ECE00F611F5 /* RegisterScene.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
+				1A304D9B183E4ECE00F611F5 /* LoginScene.m in Sources */,
 				1AD6C081183DE17500C339E5 /* ASINetworkQueue.m in Sources */,
 				1AD6C07A183DE17500C339E5 /* ASIAuthenticationDialog.m in Sources */,
 				1AD6C07E183DE17500C339E5 /* ASIFormDataRequest.m in Sources */,
-				1ACD2328183D05B000302D4B /* OptionScene.m in Sources */,
+				1A304D9C183E4ECE00F611F5 /* MainScene.m in Sources */,
 				1A304D92183E4D6C00F611F5 /* GameProxy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
