@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A2DD54E183D02EE00D82922 /* RegisterScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2DD54D183D02EE00D82922 /* RegisterScene.m */; };
+		1A304D92183E4D6C00F611F5 /* GameProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A304D91183E4D6C00F611F5 /* GameProxy.m */; };
 		1A6568F8183CA23D00E16029 /* LoginScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6568F7183CA23D00E16029 /* LoginScene.m */; };
 		1ACD2328183D05B000302D4B /* OptionScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ACD2327183D05B000302D4B /* OptionScene.m */; };
 		1AD6C07A183DE17500C339E5 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD6C067183DE17500C339E5 /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -23,7 +24,6 @@
 		1AD6C088183DE41300C339E5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD6C087183DE41300C339E5 /* SystemConfiguration.framework */; };
 		1AD6C08A183DE42A00C339E5 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD6C089183DE42A00C339E5 /* MobileCoreServices.framework */; };
 		1AD6C08C183DE43C00C339E5 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD6C08B183DE43C00C339E5 /* libz.1.2.5.dylib */; };
-		1AD6C091183DE96800C339E5 /* GameProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD6C090183DE96800C339E5 /* GameProxy.m */; };
 		1AD6C094183DE98800C339E5 /* Parms.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD6C093183DE98800C339E5 /* Parms.m */; };
 		B737893B180761570076A88C /* Published-iOS in Resources */ = {isa = PBXBuildFile; fileRef = B737893A180761570076A88C /* Published-iOS */; };
 		B737893F1807617C0076A88C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B737893E1807617C0076A88C /* AppDelegate.m */; };
@@ -92,6 +92,8 @@
 /* Begin PBXFileReference section */
 		1A2DD54C183D02EE00D82922 /* RegisterScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterScene.h; path = ../RegisterScene.h; sourceTree = "<group>"; };
 		1A2DD54D183D02EE00D82922 /* RegisterScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisterScene.m; path = ../RegisterScene.m; sourceTree = "<group>"; };
+		1A304D90183E4D6C00F611F5 /* GameProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameProxy.h; sourceTree = "<group>"; };
+		1A304D91183E4D6C00F611F5 /* GameProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameProxy.m; sourceTree = "<group>"; };
 		1A6568F6183CA23D00E16029 /* LoginScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginScene.h; path = ../LoginScene.h; sourceTree = "<group>"; };
 		1A6568F7183CA23D00E16029 /* LoginScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginScene.m; path = ../LoginScene.m; sourceTree = "<group>"; };
 		1ACD2326183D05B000302D4B /* OptionScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OptionScene.h; path = ../OptionScene.h; sourceTree = "<group>"; };
@@ -122,8 +124,6 @@
 		1AD6C087183DE41300C339E5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		1AD6C089183DE42A00C339E5 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		1AD6C08B183DE43C00C339E5 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
-		1AD6C08F183DE96800C339E5 /* GameProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameProxy.h; sourceTree = "<group>"; };
-		1AD6C090183DE96800C339E5 /* GameProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameProxy.m; sourceTree = "<group>"; };
 		1AD6C092183DE98800C339E5 /* Parms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parms.h; sourceTree = "<group>"; };
 		1AD6C093183DE98800C339E5 /* Parms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parms.m; sourceTree = "<group>"; };
 		B737893A180761570076A88C /* Published-iOS */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Published-iOS"; path = "Source/Resources/Published-iOS"; sourceTree = SOURCE_ROOT; };
@@ -232,10 +232,10 @@
 		1AD6C08D183DE64700C339E5 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				1AD6C08F183DE96800C339E5 /* GameProxy.h */,
-				1AD6C090183DE96800C339E5 /* GameProxy.m */,
 				1AD6C092183DE98800C339E5 /* Parms.h */,
 				1AD6C093183DE98800C339E5 /* Parms.m */,
+				1A304D90183E4D6C00F611F5 /* GameProxy.h */,
+				1A304D91183E4D6C00F611F5 /* GameProxy.m */,
 			);
 			name = Helper;
 			path = Source/Helper;
@@ -498,7 +498,6 @@
 			files = (
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
 				1AD6C080183DE17500C339E5 /* ASIInputStream.m in Sources */,
-				1AD6C091183DE96800C339E5 /* GameProxy.m in Sources */,
 				1A2DD54E183D02EE00D82922 /* RegisterScene.m in Sources */,
 				1AD6C07D183DE17500C339E5 /* ASIDownloadCache.m in Sources */,
 				1AD6C084183DE18F00C339E5 /* Reachability.m in Sources */,
@@ -513,6 +512,7 @@
 				1AD6C07A183DE17500C339E5 /* ASIAuthenticationDialog.m in Sources */,
 				1AD6C07E183DE17500C339E5 /* ASIFormDataRequest.m in Sources */,
 				1ACD2328183D05B000302D4B /* OptionScene.m in Sources */,
+				1A304D92183E4D6C00F611F5 /* GameProxy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -3,14 +3,15 @@
 //  Woc3
 //
 //  Created by 王卓甫 on 13-11-21.
-//  Copyright (c) 2013年 Apportable. All rights reserved.
+//  Copyright 2013年 Apportable. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+#import "cocos2d.h"
 
-@class CCLayer;
-
-@interface GameProxy : NSObject
+@interface GameProxy : CCNode {
+    
+}
 
 //json methods
 -(void) setupRequest:(NSURL *)url withCompleteDelegate:(SEL)complete withErrorDelegate:(SEL)error toTarget:(id)node;
@@ -22,11 +23,7 @@
 -(BOOL) isObjectArray:(id) obj;
 -(BOOL) isObjectDict:(id) obj;
 -(BOOL) isObjectString:(id) obj;
+-(BOOL) isObjectInt:(id)obj;
 
-
-//tips
--(void) showTips:(CCLayer *)layer withTitle:(NSString *)title;
--(void) hideTips:(CCLayer *)layer;
--(void) changeTips:(CCLayer *)layer withTitle:(NSString *)title;
 
 @end
