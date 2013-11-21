@@ -8,6 +8,10 @@
 
 #import "GameProxy.h"
 
+#import "ASIHTTPRequest.h"
+#import "ASIFormDataRequest.h"
+
+#import "Parms.h"
 
 @implementation GameProxy
 

@@ -14,20 +14,32 @@
 @synthesize tfAccount;
 @synthesize tfPassword;
 
--(id) init
+
+-(void)onEnter
 {
-    if ((self = [super init]))
-    {
-        _tfAccount.textField.textColor = [UIColor whiteColor];
-    }
+    tfAccount.textField.textColor = [UIColor whiteColor];
+    tfAccount.textField.autocorrectionType = UITextAutocorrectionTypeNo;
+    tfAccount.textField.autocapitalizationType = UITextAutocapitalizationTypeNone;
+    tfAccount.textField.clearButtonMode = UITextFieldViewModeWhileEditing;
+    //tfAccount.textField.returnKeyType = UIReturnKeyNext;
     
-    return self;
+    tfPassword.textField.textColor = [UIColor whiteColor];
+    tfPassword.textField.autocorrectionType = UITextAutocorrectionTypeNo;
+    tfPassword.textField.autocapitalizationType = UITextAutocapitalizationTypeNone;
+    tfPassword.textField.clearButtonMode = UITextFieldViewModeWhileEditing;
+    //tfPassword.textField.returnKeyType = UIReturnKeyDone;
+    tfPassword.textField.secureTextEntry = YES;
 }
 
 -(void) doLogin: (id)sender
 {
-    NSString* account = _tfAccount.textField.text;
-    NSString* password = _tfPassword.textField.text;
+    NSString* account = tfAccount.textField.text;
+    NSString* password = tfPassword.textField.text;
+    
+    if ([account isEqualToString:@"a"] && [password isEqualToString:@"a"])
+    {
+        
+    }
 }
 
 -(void) doRegister:(id)sender

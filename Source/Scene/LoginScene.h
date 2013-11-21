@@ -13,15 +13,12 @@
 
 @interface LoginScene : CCNode {
     
-    CCTextField* _tfAccount;
-    CCTextField* _tfPassword;
+    CCTextField* tfAccount;
+    CCTextField* tfPassword;
 }
 
 @property (nonatomic, retain) CCTextField* tfAccount;
 @property (nonatomic, retain) CCTextField* tfPassword;
 
-//-(void) doLogin: (id)sender;
-//-(void) doRegister: (id)sender;
-//-(void) doOption: (id)sender;
 
 @end

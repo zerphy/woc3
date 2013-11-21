@@ -232,7 +232,7 @@
 				<key>displayName</key>
 				<string>CCTextField</string>
 				<key>memberVarAssignmentName</key>
-				<string>_tfAccount</string>
+				<string>tfAccount</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>properties</key>
@@ -349,9 +349,9 @@
 				<key>displayName</key>
 				<string>CCTextField</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>tfPassword</string>
 				<key>memberVarAssignmentType</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>properties</key>
 				<array>
 					<dict>
@@ -447,6 +447,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>baseClass</key>
@@ -1456,8 +1458,6 @@
 				</array>
 			</dict>
 		</array>
-		<key>selected</key>
-		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>
