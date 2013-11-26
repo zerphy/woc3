@@ -12,6 +12,7 @@
 		1A304D9C183E4ECE00F611F5 /* MainScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A304D96183E4ECE00F611F5 /* MainScene.m */; };
 		1A304D9D183E4ECE00F611F5 /* OptionScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A304D98183E4ECE00F611F5 /* OptionScene.m */; };
 		1A304D9E183E4ECE00F611F5 /* RegisterScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A304D9A183E4ECE00F611F5 /* RegisterScene.m */; };
+		1A5FD01C18448EFF00779698 /* GlobalFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5FD01B18448EFF00779698 /* GlobalFunction.m */; };
 		1AD6C07A183DE17500C339E5 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD6C067183DE17500C339E5 /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1AD6C07B183DE17500C339E5 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD6C06A183DE17500C339E5 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1AD6C07C183DE17500C339E5 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD6C06C183DE17500C339E5 /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -100,6 +101,8 @@
 		1A304D98183E4ECE00F611F5 /* OptionScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionScene.m; sourceTree = "<group>"; };
 		1A304D99183E4ECE00F611F5 /* RegisterScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterScene.h; sourceTree = "<group>"; };
 		1A304D9A183E4ECE00F611F5 /* RegisterScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterScene.m; sourceTree = "<group>"; };
+		1A5FD01A18448EFF00779698 /* GlobalFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalFunction.h; sourceTree = "<group>"; };
+		1A5FD01B18448EFF00779698 /* GlobalFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalFunction.m; sourceTree = "<group>"; };
 		1AD6C066183DE17500C339E5 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
 		1AD6C067183DE17500C339E5 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
 		1AD6C068183DE17500C339E5 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
@@ -236,6 +239,8 @@
 				1AD6C093183DE98800C339E5 /* Parms.m */,
 				1A304D90183E4D6C00F611F5 /* GameProxy.h */,
 				1A304D91183E4D6C00F611F5 /* GameProxy.m */,
+				1A5FD01A18448EFF00779698 /* GlobalFunction.h */,
+				1A5FD01B18448EFF00779698 /* GlobalFunction.m */,
 			);
 			name = Helper;
 			path = Source/Helper;
@@ -510,6 +515,7 @@
 				1A304D9B183E4ECE00F611F5 /* LoginScene.m in Sources */,
 				1AD6C081183DE17500C339E5 /* ASINetworkQueue.m in Sources */,
 				1AD6C07A183DE17500C339E5 /* ASIAuthenticationDialog.m in Sources */,
+				1A5FD01C18448EFF00779698 /* GlobalFunction.m in Sources */,
 				1AD6C07E183DE17500C339E5 /* ASIFormDataRequest.m in Sources */,
 				1A304D9C183E4ECE00F611F5 /* MainScene.m in Sources */,
 				1A304D92183E4D6C00F611F5 /* GameProxy.m in Sources */,

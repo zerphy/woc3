@@ -8,15 +8,25 @@
 
 #import "LoginScene.h"
 #import "CCBuilderReader.h"
+#import "CCProgressNode.h"
 
 @implementation LoginScene
 
 @synthesize tfAccount;
 @synthesize tfPassword;
 
+-(void)onEnterTransitionDidFinish
+{
+    [super onEnterTransitionDidFinish];
+    
+    tfAccount.textField.text = @"";
+    tfPassword.textField.text = @"";
+}
 
 -(void)onEnter
 {
+    [super onEnter];
+    
     tfAccount.textField.textColor = [UIColor whiteColor];
     tfAccount.textField.autocorrectionType = UITextAutocorrectionTypeNo;
     tfAccount.textField.autocapitalizationType = UITextAutocapitalizationTypeNone;
@@ -38,7 +48,7 @@
     
     if ([account isEqualToString:@"a"] && [password isEqualToString:@"a"])
     {
-        
+        //CCProgressNode* node = [CCProgressNode progressWithSprite:];
     }
 }
 
