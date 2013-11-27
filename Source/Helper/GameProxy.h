@@ -13,6 +13,8 @@
     
 }
 
++(GameProxy *) sharedProxy;
+
 //json methods
 -(void) setupRequest:(NSURL *)url withCompleteDelegate:(SEL)complete withErrorDelegate:(SEL)error toTarget:(id)node;
 -(NSURL *) generateUrlWithModule:(NSString *)module andFunction:(NSString *)function andParms:(NSString *)parms;
@@ -23,8 +25,6 @@
 -(BOOL) isObjectArray:(id) obj;
 -(BOOL) isObjectDict:(id) obj;
 -(BOOL) isObjectString:(id) obj;
--(BOOL) isObjectInt:(id)obj;
-
-
+//-(BOOL) isObjectInt:(id)obj;
 
 @end

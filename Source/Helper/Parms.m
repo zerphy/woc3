@@ -142,7 +142,7 @@ static ccColor3B itemColors[] =
     else if ([self.gNet isEqualToString:@"intranet"])
     {
         //intranet
-        self.gBaseAddr = @"http://192.168.5.192:8000";
+        self.gBaseAddr = @"http://192.168.5.192:9998";
     }
 }
 

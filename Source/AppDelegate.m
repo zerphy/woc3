@@ -28,6 +28,8 @@
 #import "AppDelegate.h"
 #import "CCBuilderReader.h"
 
+#import "Parms.h"
+
 @implementation MyNavigationController
 
 // The available orientations should be defined in the Info.plist file.
@@ -143,7 +145,10 @@
 	
 	// make main window visible
 	[window_ makeKeyAndVisible];
-	
+    
+    [[Parms sharedParms] setupParms];
+    [[Parms sharedParms] setupNet:@"intranet"];
+    	
 	return YES;
 }
 

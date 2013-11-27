@@ -15,6 +15,21 @@
 
 @implementation GameProxy
 
++(GameProxy *) sharedProxy
+{
+    static GameProxy * sharedProxy;
+    
+    @synchronized(self)
+    {
+        if (!sharedProxy)
+        {
+            sharedProxy = [[GameProxy alloc] init];
+        }
+        
+        return sharedProxy;
+    }
+}
+
 //setup request parameters
 -(void) setupRequest:(NSURL *)url withCompleteDelegate:(SEL)complete withErrorDelegate:(SEL)error toTarget:(id)node
 {
@@ -34,7 +49,7 @@
 -(NSURL *) generateUrlWithModule:(NSString *)module andFunction:(NSString *)function andParms:(NSString *)parms
 {
     Parms* p = [Parms sharedParms];
-    NSString *s = [NSString stringWithFormat:@"%@/%@/%@/%@", p.gNet , module, function,
+    NSString *s = [NSString stringWithFormat:@"%@/%@/%@/%@", p.gBaseAddr , module, function,
                    [parms stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     NSURL *url = [NSURL URLWithString:s];
     return  url;

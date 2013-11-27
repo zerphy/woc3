@@ -8,7 +8,8 @@
 
 #import "RegisterScene.h"
 #import "GlobalFunction.h"
-
+#import "GameProxy.h"
+#import "ASIHTTPRequest.h"
 
 @implementation RegisterScene
 
@@ -48,10 +49,7 @@
     tfEmail.textField.autocapitalizationType = UITextAutocapitalizationTypeNone;
     tfEmail.textField.clearButtonMode = UITextFieldViewModeWhileEditing;
     
-    lbAccount.visible = NO;
-    lbPassword.visible = NO;
-    lbRepeat.visible = NO;
-    lbEmail.visible = NO;
+    [self hideErrorMsg];
 }
 
 -(void) onEnterTransitionDidFinish
@@ -66,34 +64,101 @@
 
 -(void) doFinish:(id)sender
 {
+    [self hideErrorMsg];
     NSString* account = tfAccount.textField.text;
     NSString* password = tfPassword.textField.text;
     NSString* repeat = tfRepeat.textField.text;
     NSString* email = tfEmail.textField.text;
     
+    //account check
     BOOL bInvalid = FALSE;
     int val = [GlobalFunction validateInput:account];
+    bInvalid = bInvalid || (val >0);
     if (val == 1)
     {
-        lbAccount.visible = TRUE;
-        [lbAccount setString:@"请输入账号！"];
-        bInvalid = TRUE;
+        [self showErrorMsg:@"请输入账号！" withLabel:lbAccount];
     }
     else if (val == 2)
     {
-        
+        [self showErrorMsg:@"账号不能为空格！" withLabel:lbAccount];
     }
     
+    //password check
+    val = [GlobalFunction validateInput:password];
+    bInvalid = bInvalid || (val > 0);
+    if (val == 1)
+    {
+        [self showErrorMsg:@"请输入密码！" withLabel:lbPassword];
+    }
     
+    //repeat check
+    val = [GlobalFunction validateInput:repeat];
+    bInvalid = bInvalid || (val > 0);
+    if (val == 1)
+    {
+        [self showErrorMsg:@"请重复输入密码！" withLabel:lbRepeat];
+    }
+    
+    //password and repeat check
+    if (![password isEqualToString:@""] && ![repeat isEqualToString:@""])
+    {
+        if (![password isEqualToString:repeat])
+        {
+            bInvalid = TRUE;
+            [self showErrorMsg:@"两次输入的密码不一致！" withLabel:lbPassword];
+            [self showErrorMsg:@"两次输入的密码不一致！" withLabel:lbRepeat];
+        }
+    }
+    
+    //email check
+    val = [GlobalFunction validateInput:email];
+    bInvalid = bInvalid || (val > 0);
+    if (val == 1)
+    {
+        [self showErrorMsg:@"请输入电子邮件地址！" withLabel:lbEmail];
+    }
+    
+    //invalid input, do not submit.
     if (bInvalid)
     {
         return;
     }
+    
+    NSString* md5 = [GlobalFunction md5:password];
+    
+    GameProxy* proxy = [GameProxy sharedProxy];
+    NSString* parms = [proxy concatParms:@"/", account, md5, email, nil];
+    NSURL* url = [proxy generateUrlWithModule:@"Master" andFunction:@"Register" andParms:parms];
+    [proxy setupRequest:url withCompleteDelegate:@selector(requestComplete:) withErrorDelegate:@selector(requestError:) toTarget:self];
+}
+
+-(void) requestComplete:(ASIHTTPRequest*)request
+{
+    NSString* respond = [request responseString];
+}
+
+-(void) requestError:(ASIHTTPRequest*)request
+{
+    NSError* error = [request error];
 }
 
 -(void) doBack:(id)sender
 {
     [self popScene];
+}
+
+-(void) hideErrorMsg
+{
+    lbAccount.visible = NO;
+    lbPassword.visible = NO;
+    lbRepeat.visible = NO;
+    lbEmail.visible = NO;
+}
+
+-(void) showErrorMsg:(NSString*)msg withLabel:(CCLabelTTF*)label
+{
+    label.visible = TRUE;
+    [label setString:msg];
 }
 
 @end

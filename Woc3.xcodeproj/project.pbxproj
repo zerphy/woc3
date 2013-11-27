@@ -13,6 +13,7 @@
 		1A304D9D183E4ECE00F611F5 /* OptionScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A304D98183E4ECE00F611F5 /* OptionScene.m */; };
 		1A304D9E183E4ECE00F611F5 /* RegisterScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A304D9A183E4ECE00F611F5 /* RegisterScene.m */; };
 		1A5FD01C18448EFF00779698 /* GlobalFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5FD01B18448EFF00779698 /* GlobalFunction.m */; };
+		1AC170A11845D7590078EDEC /* MessageDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC170A01845D7590078EDEC /* MessageDialog.m */; };
 		1AD6C07A183DE17500C339E5 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD6C067183DE17500C339E5 /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1AD6C07B183DE17500C339E5 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD6C06A183DE17500C339E5 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1AD6C07C183DE17500C339E5 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD6C06C183DE17500C339E5 /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -103,6 +104,8 @@
 		1A304D9A183E4ECE00F611F5 /* RegisterScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterScene.m; sourceTree = "<group>"; };
 		1A5FD01A18448EFF00779698 /* GlobalFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalFunction.h; sourceTree = "<group>"; };
 		1A5FD01B18448EFF00779698 /* GlobalFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalFunction.m; sourceTree = "<group>"; };
+		1AC1709F1845D7590078EDEC /* MessageDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageDialog.h; sourceTree = "<group>"; };
+		1AC170A01845D7590078EDEC /* MessageDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageDialog.m; sourceTree = "<group>"; };
 		1AD6C066183DE17500C339E5 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
 		1AD6C067183DE17500C339E5 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
 		1AD6C068183DE17500C339E5 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
@@ -185,6 +188,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AC1709A1845D71E0078EDEC /* Dialog */ = {
+			isa = PBXGroup;
+			children = (
+				1AC1709F1845D7590078EDEC /* MessageDialog.h */,
+				1AC170A01845D7590078EDEC /* MessageDialog.m */,
+			);
+			name = Dialog;
+			path = Source/Dialog;
+			sourceTree = "<group>";
+		};
 		1AD6C040183DDFBE00C339E5 /* External */ = {
 			isa = PBXGroup;
 			children = (
@@ -273,6 +286,7 @@
 		B737893C1807616C0076A88C /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				1AC1709A1845D71E0078EDEC /* Dialog */,
 				1AD6C08E183DE66800C339E5 /* Scene */,
 				1AD6C08D183DE64700C339E5 /* Helper */,
 				1AD6C040183DDFBE00C339E5 /* External */,
@@ -514,6 +528,7 @@
 				B73789871807631A0076A88C /* main.m in Sources */,
 				1A304D9B183E4ECE00F611F5 /* LoginScene.m in Sources */,
 				1AD6C081183DE17500C339E5 /* ASINetworkQueue.m in Sources */,
+				1AC170A11845D7590078EDEC /* MessageDialog.m in Sources */,
 				1AD6C07A183DE17500C339E5 /* ASIAuthenticationDialog.m in Sources */,
 				1A5FD01C18448EFF00779698 /* GlobalFunction.m in Sources */,
 				1AD6C07E183DE17500C339E5 /* ASIFormDataRequest.m in Sources */,

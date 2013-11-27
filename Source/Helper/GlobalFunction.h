@@ -12,4 +12,6 @@
 
 +(int) validateInput:(NSString*) text;
 
++(NSString *)md5:(NSString*)data;
+
 @end

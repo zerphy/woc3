@@ -100,8 +100,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>baseClass</key>
@@ -1521,7 +1519,7 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>730</real>
+							<real>700</real>
 							<real>440</real>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1535,7 +1533,7 @@
 						<string>Point</string>
 						<key>value</key>
 						<array>
-							<real>0.5</real>
+							<real>0.0</real>
 							<real>0.5</real>
 						</array>
 					</dict>
@@ -1718,7 +1716,7 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>730</real>
+							<real>700</real>
 							<real>370</real>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1732,7 +1730,7 @@
 						<string>Point</string>
 						<key>value</key>
 						<array>
-							<real>0.5</real>
+							<real>0.0</real>
 							<real>0.5</real>
 						</array>
 					</dict>
@@ -1915,7 +1913,7 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>730</real>
+							<real>700</real>
 							<real>300</real>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -1929,7 +1927,7 @@
 						<string>Point</string>
 						<key>value</key>
 						<array>
-							<real>0.5</real>
+							<real>0.0</real>
 							<real>0.5</real>
 						</array>
 					</dict>
@@ -2112,7 +2110,7 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>730</real>
+							<real>700</real>
 							<real>230</real>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -2126,7 +2124,7 @@
 						<string>Point</string>
 						<key>value</key>
 						<array>
-							<real>0.5</real>
+							<real>0.0</real>
 							<real>0.5</real>
 						</array>
 					</dict>
@@ -2286,6 +2284,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
